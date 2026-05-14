@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>פיצריית הזהב - הסניפים שלנו</title>
+     <link rel="stylesheet" href="style.css">
+    <style>
+      
+       
+        li {
+            counter-increment: pizza-counter;
+            margin: 20px 0;
+            padding: 15px;
+            background: #fff8f0;
+            border-right: 5px solid #f39c12;
+            border-radius: 5px;
+            font-size: 18px;
+            position: relative;
+        }
+        li::before {
+            content: counter(pizza-counter) ". ";
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 22px;
+            margin-left: 10px;
+        }
+        .branch-name {
+            font-weight: bold;
+            color: #d35400;
+            display: block;
+            font-size: 20px;
+        }
+        .details {
+            font-size: 16px;
+            color: #555;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">דף שער</a>
+        <a href="page2.html">התפריט שלנו</a>
+        <a href="page3.html">גלריית תמונות</a>
+        <a href="page4.html">מבצעים חמים</a>
+        <a href="page5.html">הסניפים שלנו</a>
+        <a href="page6.html">קצת עלינו</a>
+        <a href="page7.html">צור קשר</a>
+    </nav>
+
+    <div class="branches-container">
+        <h1>הסניפים שלנו ברחבי הארץ</h1>
+        <p>חפשו את הסניף הקרוב אליכם ותיהנו מפיצה חמה וטרייה!</p>
+
+        <ol>
+            <li>
+                <span class="branch-name">סניף תל אביב (הראשי)</span>
+                <div class="details">רחוב דיזינגוף 100 | טלפון: 03-1234567</div>
+            </li>
+            <li>
+                <span class="branch-name">סניף ירושלים</span>
+                <div class="details">רחוב יפו 50 | טלפון: 02-9876543</div>
+            </li>
+            <li>
+                <span class="branch-name">סניף חיפה</span>
+                <div class="details">שדרות הנשיא 12 | טלפון: 04-5554443</div>
+            </li>
+            <li>
+                <span class="branch-name">סניף באר שבע</span>
+                <div class="details">רחוב רגר 20 | טלפון: 08-1112223</div>
+            </li>
+        </ol>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>פיצריית הזהב - צור קשר</title>
+     <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+    <style>
+    
+      
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">דף שער</a>
+        <a href="page2.html">התפריט שלנו</a>
+        <a href="page3.html">גלריית תמונות</a>
+        <a href="page4.html">מבצעים חמים</a>
+        <a href="page5.html">הסניפים שלנו</a>
+        <a href="page6.html">קצת עלינו</a>
+        <a href="page7.html" style="text-decoration: underline;">צור קשר</a>
+    </nav>
+
+    <div class="form-container">
+        <h1>דברו איתנו</h1>
+        <p>משהו לא היה תקין? רוצים להזמין אירוע? כתבו לנו!</p>
+        
+        <div id="error" class="error-message"></div>
+
+        <form id="contactForm">
+            <input type="text" id="userName" placeholder="שם מלא" onmouseleave="checkForm()" required>
+            <input type="email" id="userEmail" placeholder="כתובת אימייל" onmouseleave="checkForm()" required>
+            <input type="tel" id="userPhone" placeholder="מספר טלפון" onmouseleave="checkForm()" required>
+            <textarea id="userMessage" rows="4" placeholder="ההודעה שלך..." ></textarea>
+            
+            <button type="button" onclick="sendData()">שלח הודעה</button>
+        </form>
+    </div>
+
+ 
+
+</body>
+</html>
